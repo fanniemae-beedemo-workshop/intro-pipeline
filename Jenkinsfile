@@ -7,14 +7,14 @@ pipeline {
       steps {
         echo "Hello World! ${MY_NAME}"
         sh 'java -version'
-        echo "${TEST_USER_USR}"
-        echo "${TEST_USER_PSW}"
+        echo "${g8uhcz_USR}"
+        echo "${g8uhcz_PSW}"
       }
     }
   }
   environment {
     MY_NAME = 'Heng Zheng'
-    TEST_USER = credentials('TEST_USER')
+    TEST_USER = credentials('g8uhcz')
   }
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
