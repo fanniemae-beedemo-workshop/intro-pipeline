@@ -14,6 +14,7 @@ pipeline {
   }
   environment {
     MY_NAME = 'Heng Zheng'
+    TEST_USER = credentials('test-user')
   }
   parameters {
     string(name: 'Name', defaultValue: 'g8uhcz', description: 'Who should I say hi to?')
